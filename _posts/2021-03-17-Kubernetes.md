@@ -21,12 +21,10 @@ In this page you'll find `Kubernetes` commands and other useful information.
 Having VirtualBox and minikube with Docker installed on the Windows-host might be a problem.
 If VirtualBox does not work do the following:
 
-1. Open a cmd with admin privilige
-2. Run the following command to disable Hyper-V in Windows
+Open a cmd with admin privilige
+Run the following command to disable Hyper-V in Windows
 
-```sh
-bcdedit /set hypervisorlaunchtype off
-```
+`bcdedit /set hypervisorlaunchtype off`
 
 3. Reboot Windows
 
@@ -34,16 +32,22 @@ bcdedit /set hypervisorlaunchtype off
 
 | **Command**  | **What does it do?** |
 |:-------------:|:-------------:|
-| `kubectl create -f service-definition.yml`             | Create a service from the yml file   |
-| `kubectl get services`                                 | List all the services running    |
-| `kubectl get services -l app=nginx-app`                | List the service related to the app specified    |
-| `kubectl describe svc my-service`                      | Check all the detail of the services    |
-| `kubectl delete svc my-service`                        | Delete the services, this deletes the pods as well    |
-| `kubectl get pods -o wide`                             | Check the pods and see in which node the pod is scheduled   |
-| `kubectl get no -o wide`                               | Check the nodes in k8s cluster   |
-| `kubectl taint nodes node-name key=value:taint-effect` | Taint a node so pods can not be put inside it |
-| `kubetct taint nodes node1 app=blu:NoSchedule`         | Example of tainting a node  |
-| `kubectl describe node kubemaster | grep Taint`        |  |
+| `kubectl get all`                                      | Check all resources                                       |
+| `kubectl get all`                                      | Check all resources with more information                 |
+| `kubectl get nodes`                                    | Check the nodes in k8s cluster                            |
+| `kubectl get nodes -o wide`                            | Check the nodes in k8s cluster with more info             |
+| `kubectl get pods`                                     | Check the pods in k8s cluster                             |
+| `kubectl get pods -o wide`                             | Check the pods and see in which node the pod is scheduled |
+| `kubectl get services`                                 | List all the services running                             |
+| `kubectl get services -l app=nginx-app`                | List the service related to the app specified             |
+| `kubectl create -f deployment-definition.yml`          | Create a deployment from the yml file                     |
+| `kubectl expose deployment my-deployment --type=NodePort` | Create a service of type NodePort for the deployment. This makes the deployment accessible from outside the cluster   |
+| `kubectl create -f service-definition.yml`             | Create a service from the yml file                        |
+| `kubectl describe svc my-service`                      | Check all the detail of the services                      |
+| `kubectl delete svc my-service`                        | Delete the services, this deletes the pods as well        |
+| `kubectl taint nodes node-name key=value:taint-effect` | Taint a node so pods can not be put inside it             |
+| `kubetct taint nodes node1 app=blu:NoSchedule`         | Example of tainting a node                                |
+| `kubectl describe node kubemaster | grep Taint`        | not sure                                                  |
 {: .tablelines}
 
 ### Services
