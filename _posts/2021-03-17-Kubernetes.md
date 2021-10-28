@@ -12,6 +12,24 @@ In this page you'll find `Kubernetes` commands and other useful information.
         }
 </style>
 
+### Installation
+
+[Install kubect for linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+[Install kubect for windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
+[Install minikube for windows](https://minikube.sigs.k8s.io/docs/start/)
+
+Having VirtualBox and minikube with Docker installed on the Windows-host might be a problem.
+If VirtualBox does not work do the following:
+
+1. Open a cmd with admin privilige
+2. Run the following command to disable Hyper-V in Windows
+
+```sh
+bcdedit /set hypervisorlaunchtype off
+```
+
+3. Reboot Windows
+
 ### Commands
 
 | **Command**  | **What does it do?** |
