@@ -14,8 +14,10 @@ In this page you'll find `Kubernetes` commands and other useful information.
 
 ### Installation
 
-[Install kubect for linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+[Install kubect for linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) \newline
+
 [Install kubect for windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
+
 [Install minikube for windows](https://minikube.sigs.k8s.io/docs/start/)
 
 Having VirtualBox and minikube with Docker installed on the Windows-host might be a problem.
