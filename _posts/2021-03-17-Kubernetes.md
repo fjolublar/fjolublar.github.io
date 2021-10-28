@@ -14,7 +14,7 @@ In this page you'll find `Kubernetes` commands and other useful information.
 
 ### Installation
 
-[Install kubect for linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) \newline
+[Install kubect for linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
 [Install kubect for windows](https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/)
 
