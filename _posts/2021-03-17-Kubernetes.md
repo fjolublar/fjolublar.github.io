@@ -34,11 +34,14 @@ Reboot Windows
 |:-------------:|:-------------:|
 | `kubectl cluster-info`                                 | Check how the cluster is set up                           |
 | `kubectl get all`                                      | Check all resources                                       |
-| `kubectl get all`                                      | Check all resources with more information                 |
+| `kubectl get all -o wide`                              | Check all resources with more information                 |
 | `kubectl get nodes`                                    | Check the nodes in k8s cluster                            |
 | `kubectl get nodes -o wide`                            | Check the nodes in k8s cluster with more info             |
 | `kubectl get pods`                                     | Check the pods in k8s cluster                             |
 | `kubectl get pods -o wide`                             | Check the pods and see in which node the pod is scheduled |
+| `kubectl get deployments`                              | List all the deployments running                          |
+| `kubectl get deployments -o wide`                      | List all the deployments running with more info           |
+| `kubectl get deployment my-deployment -o yaml`         | Check the specific deployment as a yaml                   |
 | `kubectl get services`                                 | List all the services running                             |
 | `kubectl get services -l app=nginx-app`                | List the service related to the app specified             |
 | `kubectl create -f deployment-definition.yml`          | Create a deployment from the yml file                     |
@@ -52,39 +55,15 @@ Reboot Windows
 | `kubectl describe node kubemaster | grep Taint`        | not sure                                                  |
 {: .tablelines}
 
-### Services
-
----
-
-### NodePort Service
-
-### Example yml file for a NodePort service
-```
-#Service
-#nginx-svc-np.yml
-apiVersion: v1
-kind: Service
-metadata:
-	name: my-service
-	labels:
-		app: nginx-app
-spec:
-	selector:
-		app: nginx-app
-	type: NodePort
-	port: 
-		-nodePort: 30008
-		 port: 80
-		 targetPort: 80
-```
+We can create many deployments and Services with a single yaml file.
+We use the `---` 3-dash notation to separate them in the file and than call:
+`kubectl create -f <file-name>.yaml`
 
 ### Deployment
 
-###Example yml file for a Deployment.
+#### Example yml file for a Deployment.
 
 ```sh
-#Service
-#nginx-svc-np.yml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -114,4 +93,27 @@ spec:
 						memory:100Mi
 				 ports:
 					-containerPort: 8002
+```
+
+### Services
+
+## Example yml file for a NodePort service
+
+```
+#Service
+#nginx-svc-np.yml
+apiVersion: v1
+kind: Service
+metadata:
+	name: my-service
+	labels:
+		app: nginx-app
+spec:
+	selector:
+		app: nginx-app
+	type: NodePort
+	port: 
+		-nodePort: 30008
+		 port: 80
+		 targetPort: 80
 ```
