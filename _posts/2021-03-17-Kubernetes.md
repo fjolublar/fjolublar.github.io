@@ -21,8 +21,8 @@ In this page you'll find `Kubernetes` commands and other useful information.
 Having VirtualBox and minikube with Docker installed on the Windows-host might be a problem.
 If VirtualBox does not work do the following:
 
-Open a cmd with admin privilige
-Run the following command to disable Hyper-V in Windows
+Open a cmd with admin privilige.
+Run the following command to disable Hyper-V in Windows.
 
 `bcdedit /set hypervisorlaunchtype off`
 
@@ -43,6 +43,8 @@ Reboot Windows
 | `kubectl get deployments -o wide`                      | List all the deployments running with more info           |
 | `kubectl get deployment my-deployment -o yaml`         | Check the specific deployment as a yaml                   |
 | `kubectl get services`                                 | List all the services running                             |
+| `kubectl get namespaces`                               | List all the namespaces                                   |
+| `kubectl get services -o wide`                         | List all the services running with more info              |
 | `kubectl get services -l app=nginx-app`                | List the service related to the app specified             |
 | `kubectl create -f deployment-definition.yml`          | Create a deployment from the yml file                     |
 | `kubectl expose deployment my-deployment --type=NodePort` | Exposing the deployment as a service of type NodePort. This makes the deployment accessible from outside the cluster   |
