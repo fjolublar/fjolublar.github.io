@@ -26,12 +26,13 @@ Run the following command to disable Hyper-V in Windows
 
 `bcdedit /set hypervisorlaunchtype off`
 
-3. Reboot Windows
+Reboot Windows
 
 ### Commands
 
 | **Command**  | **What does it do?** |
 |:-------------:|:-------------:|
+| `kubectl cluster-info`                                 | Check how the cluster is set up                           |
 | `kubectl get all`                                      | Check all resources                                       |
 | `kubectl get all`                                      | Check all resources with more information                 |
 | `kubectl get nodes`                                    | Check the nodes in k8s cluster                            |
@@ -41,7 +42,8 @@ Run the following command to disable Hyper-V in Windows
 | `kubectl get services`                                 | List all the services running                             |
 | `kubectl get services -l app=nginx-app`                | List the service related to the app specified             |
 | `kubectl create -f deployment-definition.yml`          | Create a deployment from the yml file                     |
-| `kubectl expose deployment my-deployment --type=NodePort` | Create a service of type NodePort for the deployment. This makes the deployment accessible from outside the cluster   |
+| `kubectl expose deployment my-deployment --type=NodePort` | Exposing the deployment as a service of type NodePort. This makes the deployment accessible from outside the cluster   |
+|`http://<public-node-ip>:<node-port>`|Use the node address and node port to access the application|
 | `kubectl create -f service-definition.yml`             | Create a service from the yml file                        |
 | `kubectl describe svc my-service`                      | Check all the detail of the services                      |
 | `kubectl delete svc my-service`                        | Delete the services, this deletes the pods as well        |
