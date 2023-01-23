@@ -1,4 +1,4 @@
-# (fjolublar.github.io)[https://fjolublar.github.io]
+# [fjolublar.github.io](https://fjolublar.github.io)
 
 <p align="left"> 
 <img width="77" height="92" src="https://raw.githubusercontent.com/fjolublar/fjolublar.github.io/master/assets/logos/logo%40144px.png">
