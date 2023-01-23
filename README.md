@@ -1,10 +1,8 @@
-# fjolublar.github.io
+# [fjolublar.github.io]((https://fjolublar.github.io)
 
 <p align="left"> 
 <img width="77" height="92" src="https://raw.githubusercontent.com/fjolublar/fjolublar.github.io/master/assets/logos/logo%40144px.png">
 </p>
-
-Welcome to my [page](https://fjolublar.github.io) (:
 
 This Website serves as a cheat sheet for a multitude of software and other programming tools.
 Everything starting from `Linux`, `Python`, `Docker`, `Kubernetes` it's gonna be here.
