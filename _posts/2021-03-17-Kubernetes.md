@@ -35,6 +35,7 @@ Reboot Windows
 | **Command**  | **What does it do?** |
 |:-------------:|:-------------:|
 | `kubectl cluster-info`                                 | Check how the cluster is set up                           |
+| `kubectl config view`                                  | Check the kubeconfig                                      |
 | `kubectl api-resources`                                | Check all resources available to the API                  |
 | `kubectl get all`                                      | Check all resources                                       |
 | `kubectl get all -o wide`                              | Check all resources with more information                 |
