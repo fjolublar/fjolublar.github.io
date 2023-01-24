@@ -72,33 +72,33 @@ We use the `---` 3-dash notation to separate them in the file and than call:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-	name: redis-master
-	labels:
-		app:redis
+  name: redis-master
+  labels:
+    app:redis
 spec:
-	replicas: 1
-	selector: 
-		matchLabels:
-			app: redis
-			role: master
-			tier: backend
-	template:
-		metadata:
-			labels:
-				app: redis
-				role: master
-				tier: backend
-		speck:
-			containers:
-				-name: master
-				 image: <name of the image>
-				 resources:
-					requests:
-						cpu:100m
-						memory:100Mi
-				 ports:
-					-containerPort: 8002
-```
+  replicas: 1
+  selector: 
+    matchLabels:
+      app: redis
+      role: master
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: redis
+	role: master
+	tier: backend
+    speck:
+	containers:
+	  -name: master
+	   image: <name of the image>
+	   resources:
+	     requests:
+	       cpu:100m
+	       memory:100Mi
+	   ports:
+	     - containerPort: 8002
+	```
 
 ### Services
 
@@ -110,15 +110,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-	name: my-service
-	labels:
-		app: nginx-app
+  name: my-service
+  labels:
+    app: nginx-app
 spec:
-	selector:
-		app: nginx-app
-	type: NodePort
-	port: 
-		-nodePort: 30008
-		 port: 80
-		 targetPort: 80
+  selector:
+    app: nginx-app
+  type: NodePort
+  port: 
+    - nodePort: 30008
+      port: 80
+      targetPort: 80
 ```
