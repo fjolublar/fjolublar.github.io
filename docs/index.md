@@ -9,13 +9,16 @@ hero:
   actions:
     - theme: brand
       text: Cloud
-      link: /cloud
+      link: /cloud/cloud.md
     - theme: alt
       text: Books
-      link: /books
+      link: /books/books.md
     - theme: alt
       text: Games
-      link: /games
+      link: /games/games.md
+    - theme: alt
+      text: Blog
+      link: /blog/index.md
   image:
     src: /img/logo_fjolublar.png
 
