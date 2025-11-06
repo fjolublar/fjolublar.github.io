@@ -8,7 +8,10 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Cloud', link: '/markdown-examples' },
+      { text: 'Web', link: '/markdown-examples' },
+      { text: 'Books', link: '/markdown-examples' },
+      { text: 'Games', link: '/markdown-examples' }
     ],
 
     sidebar: [
@@ -16,13 +19,17 @@ export default defineConfig({
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Runtime API Examples', link: '/api-examples' },
+          { text: 'Cloud', link: '/markdown-examples' },
+          { text: 'Web', link: '/markdown-examples' },
+          { text: 'Books', link: '/markdown-examples' },
+          { text: 'Games', link: '/markdown-examples' }
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/fjolublar' }
     ]
   }
 })
