@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "My Personal Website"
+  # text: "A VitePress Site"
+  # tagline: My great project tagline
   actions:
     - theme: brand
       text: Cloud
@@ -18,11 +18,11 @@ hero:
       link: /games
 
 features:
-  - title: Feature A
+  - title: A good Book Quote
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - title: A good Game Quote
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: A good Software Quote
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
