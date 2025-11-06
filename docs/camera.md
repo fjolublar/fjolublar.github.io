@@ -32,4 +32,3 @@ C922      : 30 FPS at 1080p
 |     |   |
 |     |   |
 |     |   |
-{: .tablelines}

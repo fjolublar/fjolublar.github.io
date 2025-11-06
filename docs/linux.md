@@ -42,7 +42,7 @@ In this page you'll find `Linux` commands and other useful information.
 | `cat file.txt | sort | uniq`       | Getting the content of file.txt sorted and only the uniqe values                   |
 | `grep`                             | grep limits the search criteria                    |
 | `grep -v file.txt`                 | Don't grep rows that contain the word file.txt  ( -v is the same as not in python) |
-{: .tablelines}
+ 
 <br>
 
 status can be:
@@ -61,7 +61,7 @@ status can be:
 | `free -m`       | The same but in MB                                            |
 | `df`            |  Means disc free. Tells us how much diskspace is being used   |
 | `df -h`         |  Makes it better and easier to read.   "h" is human-readible. |
-{: .tablelines}
+ 
 
 
 "free" memory is the memory that is not used at all by the system.
@@ -111,7 +111,7 @@ we can't add more. These are called i-nodes.
 | `find / -name *.log`                            | Find everyfile in the root-folder. Search by name that ends with .log | 
 | `find tes*`                                     | Find files that start with "tes"                                      | 
 | `find *tes*`                                    | Find files that has "tes" somewhere in the name                       | 
-{: .tablelines}
+
 
 ---
 
@@ -124,7 +124,6 @@ we can't add more. These are called i-nodes.
 | `sudo lsof -i -P -n | grep LISTEN`   | Check open ports in the system                    | 
 | `sudo netstat -ap | grep <port_nr>`  | Check the status of the port being used or not    | 
 | `ping -I wlan0 time.google.com`      | Ping with defined network interface. Here `wlan0` |
-{: .tablelines}
 
 ---
 
@@ -140,7 +139,6 @@ we can't add more. These are called i-nodes.
 | CTRL + A or Home           | Go to the beginning of the line                    |  
 | CTRL + E or End            | Go to the end of the line                          |  
 | CTRL + ALT + (UP or Down)  | Go to the other Workspace in Ubuntu                |  
-{: .tablelines}
 
 ---
 
@@ -160,7 +158,7 @@ Permission string that we get when we press `ls -l`
 |               |                                  |  w = write access                           | 
 |               |                                  |  x = execute access                         | 
 |               |                                  |  - = No access/permission                   | 
-{: .tablelines}
+ 
 <br>
 
 This command shows us all the users:
@@ -191,7 +189,7 @@ This command shows us all the users:
 | `sudo usermod -aG heroes ini`   | Adding the used ini to the group heroes. (logout and login to work) |   
 | `sudo gpasswd - d ini heroes`   | Removing a user from a group     |   
 | `sudo groupdel heroes`    | Removing a group                       |   
-{: .tablelines}
+ 
 
 ---
 
@@ -266,7 +264,7 @@ vim works with "modes".  Normally is the `command` mode.
 | `o`                   | Create a new line                                  |
 | `0`                   | Go to the beginning  of the line                   |
 | `$`                   | Go to the end of the line                          |
-{: .tablelines}
+ 
 
 When we are in Command Mode 
 <br>
@@ -284,7 +282,7 @@ When we are in Command Mode
 | `u`                   | Undo the last change                               |
 | `u  then CTRL + r`    | Undo the previous changes                          |
 | `30 then SHIFT + G`   | Go to line number 30                               |
-{: .tablelines}
+ 
 <br>
 
 ### Screen
@@ -335,7 +333,7 @@ Install [wondershaper](https://github.com/magnific0/wondershaper) from Github. D
 |:-------------:|:-------------:|
 | `sudo wondershaper -c -a eth0`               |  Clean the limits from adaptor. Needs to be done everytime |  
 | `sudo wondershaper -a eth0 -u 4096 -d 50000` |  Limit Downlink and Uplink Bandwidth of Client             |  
-{: .tablelines}
+ 
 <br>
 
 ### iperf3
@@ -352,7 +350,7 @@ This tool is a CPU intensive one and the results we get are always lower than th
 | `iperf3 -c 192.168.1.8 -t 10` |  Time in seconds to transmit                      |  
 | `iperf3 -c -u 192.168.1.8`    |  Use UDP instead of TCP. (Check Documentation)    |  
 | `iperf3 -c 192.168.1.8 -R`    |  -R. Client in reverse test mode – Server sends, client receives     |
-{: .tablelines}
+ 
 <br>
 
 ### crontab
@@ -391,7 +389,7 @@ Commands that need admin rights should be added to the root crontab file, that c
 | `5 4 * * sun`              |  At 04:05 each Sunday                         | 
 | `0,20,40 * * * *`          |  Every 20 minute                              | 
 | `*/20 * * * *`             |  Every 20 minute. Same as Above               | 
-{: .tablelines}
+ 
 
 
 To add a new route in the route table on reboot we write the following command in the crontab file:
