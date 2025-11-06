@@ -34,7 +34,7 @@ export default defineConfig({
 
     logo: {
       // relative to `public` folder
-      src: '/assets/logos/logo_32px.png',
+      src: '/logo_32px.png',
       width: 24,
       height: 24
     },
