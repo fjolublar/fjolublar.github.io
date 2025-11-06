@@ -16,6 +16,8 @@ hero:
     - theme: alt
       text: Games
       link: /games
+  image:
+    src: /img/logo_fjolublar.png
 
 features:
   - title: A good Book Quote
