@@ -20,10 +20,10 @@ export default defineConfig({
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' },
-          { text: 'Cloud', link: '/markdown-examples' },
-          { text: 'Web', link: '/markdown-examples' },
-          { text: 'Books', link: '/markdown-examples' },
-          { text: 'Games', link: '/markdown-examples' }
+          { text: 'Cloud', link: '/cloud' },
+          { text: 'Web', link: '/web' },
+          { text: 'Books', link: '/books' },
+          { text: 'Games', link: '/games' }
         ]
       }
     ],
@@ -34,7 +34,7 @@ export default defineConfig({
 
     logo: {
       // relative to `public` folder
-      src: '/logo_32px.png',
+      src: '/img/logo_32px.png',
       width: 24,
       height: 24
     },
