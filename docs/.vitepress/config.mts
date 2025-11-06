@@ -2,7 +2,6 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  head: [['link', { rel: 'icon', href: '/assets/logos/logo_fjolublar.png' }]],
   title: "fjolublar",
   description: "My Personal Website",
   themeConfig: {
@@ -31,6 +30,13 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/fjolublar' }
-    ]
+    ],
+
+    logo: {
+      // relative to `public` folder
+      src: '/assets/logos/logo_fjolublar.png',
+      width: 24,
+      height: 24
+    },
   }
 })
