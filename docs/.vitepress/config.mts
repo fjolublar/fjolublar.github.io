@@ -9,10 +9,8 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Cloud', link: '/cloud/' },
-      { text: 'Cloud', link: '/docs/index.md', activeMatch: '/docs/' },
       { text: 'Books', link: '/books/' },
       { text: 'Games', link: '/games/' },
-      { text: 'Blog', link: '/blog/index.md', activeMatch: '/blog/' },
     ],
 
     sidebar: [
