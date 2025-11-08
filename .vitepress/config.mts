@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "fjolublar",
   description: "My Personal Website",
+  head: [['link', { rel: 'icon', href: '/img/logo_32px.png' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
