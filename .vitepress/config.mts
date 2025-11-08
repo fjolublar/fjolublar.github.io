@@ -9,10 +9,25 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Projects', link: '/docs/projects/' },
-      { text: 'Blog', link: '/blog/' },
+      {
+        text: 'Projects',
+        items: [
+          { text: 'MQRA', link: '/docs/projects/mqra' },
+          { text: 'Raspberry Pi', link: '/docs/projects/Raspberry Pi/raspberry_pi' },
+          { text: 'Video Processing', link: '/docs/projects/Raspberry Pi/video_processing' },
+        ]
+      },
+      {
+        text: 'Blog',
+        items: [
+          { text: 'Learning k8s visually', link: '/blog/learning_k8s_visually' },
+        ]
+      },
     ],
-
+    footer: {
+      message: 'Created using VitePress',
+      copyright: 'Copyright © 2025-present'
+    },
     sidebar: [
       {
         text: 'Introduction',
@@ -36,12 +51,14 @@ export default defineConfig({
       },
       {
         text: 'Web',
+        collapsed: false,
         items: [
           { text: 'Linux', link: '/docs/web/linux' },
         ]
       },
       {
         text: 'Projects',
+        collapsed: false,
         items: [
           { text: 'MQRA', link: '/docs/projects/mqra' },
           { text: 'Raspberry Pi', link: '/docs/projects/Raspberry Pi/raspberry_pi' },
