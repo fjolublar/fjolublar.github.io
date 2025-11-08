@@ -8,8 +8,8 @@ hero:
   tagline: "Welcome to my little corner of the internet"
   actions:
     - theme: brand
-      text: whoami
-      link: /who_am_i.md
+      text: Whoami?
+      link: /docs/introduction/who_am_i.md
     - theme: alt
       text: Blog
       link: /blog/index.md
