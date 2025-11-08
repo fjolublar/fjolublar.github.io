@@ -22,19 +22,21 @@ export default defineConfig({
       {
         text: 'Books',
         items: [
-          { text: 'Book Reviews', link: '/docs/books/books' },
+          { text: 'Reviews', link: '/docs/books/reviews' },
+          { text: 'Favourites', link: '/docs/books/favourites' },
         ]
       },
       {
-        text: 'VideoGames',
+        text: 'Video Games',
         items: [
-          { text: 'Video Game Review', link: '/docs/games/games' },
+          { text: 'Reviews', link: '/docs/games/reviews' },
+          { text: 'Favourites', link: '/docs/games/favourites' },
         ]
       },
       {
         text: 'Web',
         items: [
-          { text: 'Who Am I?', link: '/docs/introduction/who_am_i' },
+          { text: 'Linux', link: '/docs/web/linux' },
         ]
       },
       {
@@ -42,7 +44,7 @@ export default defineConfig({
         items: [
           { text: 'MQRA', link: '/docs/projects/mqra' },
           { text: 'Raspberry Pi', link: '/docs/projects/Raspberry Pi/raspberry_pi' },
-          { text: 'VideoProcessing', link: '/docs/projects/Raspberry Pi/camera' },
+          { text: 'Video Processing', link: '/docs/projects/Raspberry Pi/video_processing' },
         ]
       },
       {
@@ -54,7 +56,8 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/fjolublar' }
+      { icon: 'github', link: 'https://github.com/fjolublar' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/indrit-fejza/' }
     ],
 
     logo: {
