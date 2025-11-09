@@ -18,6 +18,13 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Favourites',
+        items: [
+          { text: 'Books', link: '/docs/books/favourites' },
+          { text: 'Video Games', link: '/docs/games/favourites' },
+        ]
+      },
+      {
         text: 'Blog',
         items: [
           { text: 'Learning k8s visually', link: '/blog/learning_k8s_visually' },
