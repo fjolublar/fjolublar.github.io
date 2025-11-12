@@ -1,6 +1,6 @@
 # Hi there 👋, 
 
-![The Pragmatic Programmer](/img/logo_fjolublar.png) <br>
+![The Pragmatic Programmer](/img/logo_fjolublar.png)
 I'm Indrit, <br>
 Currently I am working for the [Gardener](https://gardener.cloud/) project in SAP.
 Gardener is an open-source tool used to manage thousands of Kubernetes clusters across SAP and elsewhere.
