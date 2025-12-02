@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Hi there, stranger!"
   # text: "Welcome to my little corner of the internet"
-  tagline: "Welcome to my little corner of the internet. 🚧 Work in progress 🚧"
+  tagline: "Welcome to my little corner of the internet. 🚧 WIP 🚧"
   actions:
     - theme: brand
       text: Whoami?
