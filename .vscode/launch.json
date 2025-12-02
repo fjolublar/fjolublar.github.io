@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Get Book Cover",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/workspaces/fjolublar.github.io/app/scrape.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--title",
+                "hitchhiker's guide to the galaxy",
+                "--author",
+                "Douglas Adams",
+                "--download"
+            ]
+        }
+    ]
+}

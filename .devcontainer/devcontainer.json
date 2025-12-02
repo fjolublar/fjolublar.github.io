@@ -1,0 +1,20 @@
+{
+	"name": "Python DevContainer",
+	"image": "mcr.microsoft.com/devcontainers/python:1-3.12",
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"dracula-theme.theme-dracula",
+				"PKief.material-icon-theme",
+				"usernamehw.errorlens",
+				"eamodio.gitlens"
+			]
+		}
+	},
+	"postCreateCommand": "pip3 install -r requirements.txt",
+	"remoteUser": "root"
+}
