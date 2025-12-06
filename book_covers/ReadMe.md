@@ -11,3 +11,5 @@ Usage:
 ```cmd
 python ./app/scrape.py --title "hitchhiker's guide to the galaxy" --author "Douglas Adams" --download
 ```
+
+Running the above script should download the cover image in the [book_covers](https://github.com/fjolublar/fjolublar.github.io/blob/main/book_covers/The%20Hitch%20Hiker's%20Guide%20to%20the%20Galaxy.jpg) dir.
