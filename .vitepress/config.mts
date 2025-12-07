@@ -28,6 +28,7 @@ export default defineConfig({
         text: 'Blog',
         items: [
           { text: 'Learning k8s visually', link: '/blog/learning_k8s_visually' },
+          { text: 'Learning k9s visually', link: '/blog/learning_k8s_visually' },
         ]
       },
     ],
