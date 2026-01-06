@@ -1,4 +1,4 @@
-<img width="391" height="21" alt="image" src="https://github.com/user-attachments/assets/efb3992d-1747-4b65-b39d-94365e25104a" /># 🎮 Video Games I have played
+# 🎮 Video Games I have played
 
 | Cover |  |
 |-------|----------|
