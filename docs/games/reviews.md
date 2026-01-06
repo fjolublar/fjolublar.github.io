@@ -2,6 +2,6 @@
 
 | Cover |  |
 |-------|----------|
-| ![The Pragmatic Programmer](/img/logo_fjolublar.png) | **The Pragmatic Programmer** (1999)<br>_Andrew Hunt, David Thomas_<br>**Genre:** Software Engineering<br>**Review:** A practical classic that emphasizes adaptability and craftsmanship. |
-| ![Deep Work](/img/logo_fjolublar.png) | **Deep Work** (2016)<br>_Cal Newport_<br>**Genre:** Productivity<br>**Review:** Focus is a superpower. Learn how to protect and train it. |
+| ![The Pragmatic Programmer](/img/logo_fjolublar.png) | **Call of Cthulhu: Dark Corners of the Earth** (2005)<br>_Bethesda_<br>**Genre:** Survival horror<br>**Platform:** PC<br>**Review:** Loved the atmosphere |
+
 
