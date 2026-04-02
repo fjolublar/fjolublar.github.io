@@ -1,0 +1,13 @@
+{
+    "cSpell.reportUnknownWords": false,
+    "python.testing.pytestArgs": [
+        "unittests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.autoTestDiscoverOnSaveEnabled": false,
+    "files.trimTrailingWhitespace": true, // Removes extra spaces at the end of lines
+    "editor.trimAutoWhitespace": true, // Auto-trims whitespace
+    "files.insertFinalNewline": false, // Ensures a newline at the end of the file
+    "editor.formatOnSave": false // Auto-formats code when you save
+}
